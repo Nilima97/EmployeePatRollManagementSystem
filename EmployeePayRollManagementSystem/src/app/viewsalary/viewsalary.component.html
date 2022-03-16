@@ -1,0 +1,41 @@
+<p>viewsalary works!</p>
+<div class="container">
+    <h2 style="color: white;">Salary List</h2>
+   
+    <table class="table">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col" style="color: white;">Salary ID</th>
+        <th scope="col" style="color: white;">Employee Id</th>
+        <th scope="col" style="color: white;">Provident Fund</th>
+        <th scope="col" style="color: white;">Transaction date</th>
+        <th scope="col" style="color: white;">Basic pay</th>
+        <th scope="col" style="color: white;">Dearness Allowance</th>
+        <th scope="col" style="color: white;">House Rent Allowance</th>
+        <th scope="col" style="color: white;">Gross Salary</th>
+        <th scope="col" style="color: white;">Tax</th>
+        <th scope="col" style="color: white;">Deduction</th>
+        <th scope="col" style="color: white;">NetPay</th>
+       
+      </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let salary of salary" style="color: white;">
+        <th >{{salary.salId}}</th>
+      <td>{{salary.empId}}</td>
+      <td>{{salary.pfAmount}}</td>
+      <td>{{salary.tranDate}}</td>
+      <td>{{salary.basicPay}}</td>
+      <td>{{salary.da}}</td>
+      <td>{{salary.hra}}</td>
+      <td>{{salary.grossSalary}}</td>
+      <td>{{salary.tax}}</td>
+      <td>{{salary.deduction}}</td>
+      <td>{{salary.netPay}}</td>
+         </tr>
+  
+      </tbody>
+    </table>
+    <button type="submit" class="btn btn-secondary" routerLink="/payhome">Back</button>
+    </div>
+    <!-- (click)="gotolist()" -->

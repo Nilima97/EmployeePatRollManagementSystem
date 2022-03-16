@@ -1,0 +1,29 @@
+[
+    {
+        "Name":"jay",
+        "EmployeeId":1300 ,
+        "Email":"mankar@gmail.com",
+        "Date":"12/3/2020",
+        "Status":"present"
+        
+       
+    },
+    {
+      "Name":"Ajay",
+        "EmployeeId":1700 ,
+        "Email":"mankar77@gmail.com",
+        "Date":"12/6/2020",
+        "Status":"present"
+      
+    },
+    {
+      "Name":"Vjay",
+        "EmployeeId":1500 ,
+        "Email":"mankar99@gmail.com",
+        "Date":"12/5/2020",
+        "Status":"present"
+    }
+  
+  
+      
+  ]

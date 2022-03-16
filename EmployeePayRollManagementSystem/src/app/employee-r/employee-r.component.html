@@ -1,0 +1,77 @@
+<p>sal works!</p>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="text-center">
+            <h1>Add Employee</h1><hr>
+          </div>
+          
+          
+            
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Employee ID</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">ename</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" [(ngModel)]='registerDetails.ename'aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">email</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" [(ngModel)]='registerDetails.email'aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">doj</span>
+                <input type="text" class="form-control" aria-label="Sizing example input"[(ngModel)]='registerDetails.doj' aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">role</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" [(ngModel)]='registerDetails.role'aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">dob</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" [(ngModel)]='registerDetails.dob'aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">addr</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" [(ngModel)]='registerDetails.addr'aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">phone</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" [(ngModel)]='registerDetails.phone'aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">pan</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" [(ngModel)]='registerDetails.pan'aria-describedby="inputGroup-sizing-sm">
+              </div> 
+              
+
+            
+              
+
+            
+            
+              
+              <div class="col-md-12 text-center">
+                
+                <button  type="button" class="btn btn-primary btn-block" routerLink="/employeepage" class="btn btn-light" (click)="addEmployee()">
+                  Add
+                </button>
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;
+                <button  type="button" class="btn btn-primary btn-block" routerLink="/viewsalary" class="btn btn-light" >
+                  View Salary
+                </button> -->
+              </div>
+
+             
+           
+           
+           </div>
+           </div>
+           </div>
+           </div>
+           
+           

@@ -1,0 +1,66 @@
+<div class="card">
+<ul class="nav">
+ 
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/addproduct" 
+    style="color: black;" ><h5>Add Products</h5> </a
+    >
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/productlist" 
+    style="color: black;"><h5>View Products</h5> </a
+    >
+  </li>
+
+
+  <span class="border border-dark">
+  <li class="nav-item">
+
+    <a class="nav-link" routerLink="/productlist" style="color: rgb(255, 250, 250);"> <img src=" ./assets/attendance.png" alt="photo" />
+     <br>
+     <br>
+     <div class="text-center">
+      <button type="button" class="btn btn-light">Attendance Status</button>
+    </div>
+     </a>
+
+  </li>
+  
+</span>
+ 
+  
+<br>
+<br>
+<span class="border border-dark">
+  <li class="nav-item">
+
+    <a class="nav-link" routerLink="/Invoice" style="color: rgb(255, 250, 250);"> <img src=" ./assets/invoice.png" alt="photo" />
+     <br>
+     <br>
+     <div class="text-center">
+      <button type="button" class="btn btn-light">Invoice</button>
+    </div>
+     </a>
+  </li>
+  
+</span>
+ 
+</ul>
+<style>
+  .container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  </style>
+  </div>
+<router-outlet></router-outlet>

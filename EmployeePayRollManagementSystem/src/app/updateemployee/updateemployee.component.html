@@ -1,0 +1,44 @@
+<p>updateemployee works!</p>
+
+<section>
+    
+    <div class="update-product-form">
+        <div class="wrapper" >
+    <header class="main-header" class="mb-3"><h5>Update Employee Details!!!!!</h5></header>
+    
+    
+    <div class="form">
+        <div class="inputfield"  >
+        <label for="name" class="form-label"><h5 style="color: white;">Email</h5></label>
+        <input type="text"  id="name" placeholder="Email"class="form-control mx-sm-3" />
+    </div>
+</div>
+<div class="form">
+    <div class="inputfield"  >
+        <label for="price"  class="form-label"><h5 style="color: white;">Role</h5></label>
+       <input type="text" id="price"  placeholder="Role" class="form-control mx-sm-3"/>
+    </div>
+</div>
+<div class="form">
+<div class="inputfield"  >
+       <label for="quantity"><h5 style="color: white;">Location</h5></label>
+         <input type="text" id="quantity" placeholder="Location"  class="form-control mx-sm-3"/>
+         
+        </div>
+    </div>
+    <div class="form">
+        <div class="inputfield"  >
+               <label for="quantity"><h5 style="color: white;">Phone</h5></label>
+                 <input type="text" id="quantity" placeholder="Phone"  class="form-control mx-sm-3"/>
+                 
+                </div>
+            </div>
+   <div class="panel">
+        <button id="add-product-button" class="btn btn-outline-primary" style="margin:5px;" (click)="updateEmp()"   routerLink="/employeepage" style="color: white;">Update</button>
+        <a routerLink="/payhome">
+            <button class="btn btn-outline-primary"  id="cancel-button" style="color: white;">Cancel</button>
+        </a>
+    </div>
+</div>
+</div>  
+</section>

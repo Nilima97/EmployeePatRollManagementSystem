@@ -1,0 +1,26 @@
+<p>attendancereport works!</p>
+<table class="table">
+    <thead >
+      <tr style="color: white;">
+        <th class="b" scope="col">aid</th>
+        <th class="b" scope="col">employeeid</th>
+        <th class="b" scope="col">adate</th>
+        <th class="b" scope="col">logon</th>
+        <th class="b" scope="col">logoff</th>
+        
+        
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ad of attdetail" style="color: white;">
+        
+        <td>{{ ad.aid }}</td>
+        <td>{{ ad.employeeid }}</td>
+        <td>{{ ad.adate }}</td>
+        <td>{{ ad.logon }}</td>
+        <td>{{ ad.logoff }}</td>
+       
+      </tr>
+    </tbody>
+  </table>

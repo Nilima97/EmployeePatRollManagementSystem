@@ -1,0 +1,41 @@
+<p style="color: white;">DETAILS OF EMPLOYEE</p>
+
+<table border="1" class="table table-hover table-info" cellpadding="-40">
+    <thead>
+        <tr>
+            <th class="b" scope="col">Eid</th>
+            <th class="b" scope="col">Ename</th>
+            <th class="b" scope="col">Email</th>
+            <th class="b" scope="col">DOj</th>
+            <th class="b" scope="col">Role</th>
+            <th class="b" scope="col">DOB</th>
+            <th class="b" scope="col">location</th>
+            <th class="b" scope="col">Phone</th>
+            <th class="b" scope="col">Pan</th>
+            <th colspan="2"  >Status</th>
+           
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr *ngFor="let emp of employees">
+
+            <td>{{ emp.eid }}</td>
+            <td>{{ emp.ename }}</td>
+            <td>{{ emp.email }}</td>
+            <td>{{ emp.doj }}</td>
+            <td>{{ emp.role }}</td>
+            <td>{{ emp.dob }}</td>
+            <td>{{ emp.addr }}</td>
+            <td>{{ emp.phone }}</td>
+            <td>{{ emp.pan}}</td>
+            <td >{{emp.Status}}</td>
+            <td>
+            <button type="button" style="margin:5px;" class="btn btn-primary"   routerLink="/updateemployee/{{emp.eid}}" >Update</button>
+            <button type="button" style="margin:5px;" class="btn btn-primary" (click)='onDelete(emp)'>Delete</button>
+          </td>
+        </tr>
+    </tbody>
+</table>
+<!-- <button type="button" style="margin:5px;" class="btn btn-primary"  routerLink="/updateproduct/{{db.Name}}" >Update</button>
+            <button type="button" style="margin:5px;" class="btn btn-primary" (click)='onDelete(db)'>Delete</button> -->
